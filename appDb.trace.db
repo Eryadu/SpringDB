@@ -1,0 +1,15 @@
+2025-05-25 21:28:21.093207-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+SELECT * FROM Student [42102-232]
+2025-05-25 21:30:38.627121-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+SELECT * FROM STUDENT [42102-232]
+2025-05-25 21:34:16.551735-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+SELECT * FROM STUDENT [42102-232]
+2025-05-25 21:34:39.635840-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+SELECT * FROM STUDENT [42102-232]
+2025-05-25 21:36:00.869375-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+SELECT * FROM STUDENT [42102-232]
