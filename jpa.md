@@ -4,6 +4,7 @@ Hibernate is just an ORM tool that take data in form of objects and automaticall
 ## Under the hood how hibernate work 
 
 https://www.geeksforgeeks.org/hibernate-architecture/?ref=
+-- Below written steps work in reverse order.
 -- first we need to start transaction for any DDl Query, 
 -- for transaction we need to open session
 -- for session we need sessionFactory
@@ -34,3 +35,11 @@ public class Customer {
 }
 Without @Table, the Customer entity would be mapped to a table named "Customer" in the default schema. The @Table 
 annotation specifies that the entity should be mapped to the "customers" table in the "public" schema. 
+
+## Important Note
+## In JPA "save" command work for both insert the data and update the data. It differentiated whether perform insert
+   or update, first check by select query (internally), data already exit or not , if data exit then it fire update 
+   query else it will fire insert query.
+   
+## @Repository is just alias for @Component to differentiate the DataBase class. @Repository automatically handle 
+   all the exceptions related to dataBase
