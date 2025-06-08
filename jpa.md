@@ -43,3 +43,8 @@ annotation specifies that the entity should be mapped to the "customers" table i
    
 ## @Repository is just alias for @Component to differentiate the DataBase class. @Repository automatically handle 
    all the exceptions related to dataBase
+   
+## Get v/s Load method
+Get: when query get fired, it showed query and return data, which we can use
+Load: when query get fired, it doesn't show query until we use it somewhere or print it. So Load produces fake or 
+proxy objects, which we just use to pass to other objects i.e. Laptop data would be passed to Student.

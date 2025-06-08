@@ -27,6 +27,7 @@ public class StudentDaoImpl implements StudentDao {
     };
     @Override
     public List<Student> getAllStudents() {
+        //we can write sql query in separated file query.sql, or we can write here as well Sql query= ?
         return jdbcTemplate.query("SELECT * FROM STUDENT", rowMapper);
     }
 

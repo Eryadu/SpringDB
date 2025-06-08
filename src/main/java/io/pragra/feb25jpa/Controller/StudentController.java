@@ -1,6 +1,6 @@
 package io.pragra.feb25jpa.Controller;
 
-import io.pragra.feb25jpa.entities.Student;
+import io.pragra.feb25jpa.entities.StudentJPA;
 import io.pragra.feb25jpa.services.StudentServiceTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,8 +19,9 @@ public class StudentController {
     StudentServiceTest studentServiceTest;
 
     //@RequestMapping(method = RequestMethod.GET, path = "/getAll")
+    // @GetMapping is alternative/more precise for @requestMapping with requestMethod.GET
     @GetMapping(path = "/getAll")
-    public List<Student> getAllStudents(){
+    public List<StudentJPA> getAllStudents(){
         return studentServiceTest.getAllStudents();
     }
 

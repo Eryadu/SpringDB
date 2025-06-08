@@ -1,6 +1,6 @@
 package io.pragra.feb25jpa.dataLoader;
 
-import io.pragra.feb25jpa.entities.Student;
+import io.pragra.feb25jpa.entities.StudentJPA;
 import io.pragra.feb25jpa.repo.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -12,13 +12,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class StudentDataLoader implements CommandLineRunner {
 
+    //We need StudentRepo to use save() of JDBC Template the data initially in the DB
     @Autowired
     StudentRepo studentRepo;
 
     @Override
     public void run(String... args) throws Exception {
-        Student student = new Student();
-        student.setId(7);
+        StudentJPA student = new StudentJPA();
+        student.setId(102);
         student.setName("John Dang");
         student.setEmail("JohnDang@johndang.com");
 
